@@ -9,13 +9,6 @@ logger = logging.getLogger("product_uom_helper")
 class UoM(models.Model):
     _inherit = "uom.uom"
 
-    ttype = fields.Selection(
-        [
-            ("volume", "Volume"),
-            ("weight", "Weight")("amount", "Amount"),
-        ],
-        string="Type",
-    )
     baseuom_id = fields.Many2one(
         "product.uom", compute="_get_baseunit", string="Baseunit"
     )

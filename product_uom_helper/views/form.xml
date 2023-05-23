@@ -1,0 +1,13 @@
+<odoo>
+	<data noupdate='0'>
+		<record id="category_form" model="ir.ui.view">
+			<field name="model">uom.category</field>
+			<field name="inherit_id" ref="uom.product_uom_categ_form_view"/>
+			<field name="arch" type="xml">
+				<field name="name" position="after">
+					<field name="ttype"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</odoo>
