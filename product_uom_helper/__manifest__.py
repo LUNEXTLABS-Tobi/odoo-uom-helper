@@ -1,4 +1,5 @@
-{   'active': False,
+{
+    'active': False,
     'application': False,
     'assets': {'web.assets_qweb': []},
     'author': 'Marc Wimmer (marc@itewimmer.de)',
@@ -14,5 +15,6 @@
     'name': 'product_uom_helper',
     'test': [],
     'update_xml': [],
-    'version': '14.0.1.0',
-    'web': False}
+    'version': '17.0.0.0',
+    'web': False
+}
