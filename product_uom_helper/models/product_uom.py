@@ -10,7 +10,7 @@ class UoM(models.Model):
     _inherit = "uom.uom"
 
     baseuom_id = fields.Many2one(
-        "product.uom", compute="_get_baseunit", string="Baseunit"
+        "uom.uom", compute="_get_baseunit", string="Baseunit"
     )
 
     def _get_baseunit(self):
